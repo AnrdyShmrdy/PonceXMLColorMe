@@ -2,6 +2,7 @@ package com.example.poncexmlcolorme;
 
 import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,13 +15,6 @@ public class MainActivity extends AppCompatActivity {
     Boolean redButtonPressed = false; //Variable to determine when red button is first pressed
     Boolean greenButtonPressed = false; //Variable to determine when green button is first pressed
     Boolean blueButtonPressed = false; //Variable to determine when blue button is first pressed
-    @ColorInt
-    int redColor = Color.parseColor("#FF0000");
-    @ColorInt
-    int greenColor = Color.parseColor("#008000");
-    @ColorInt
-    int blueColor = Color.parseColor("#0000FF");
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void redButtonPress(View view) {
         Button red_button = findViewById(R.id.red_button);
         if (!redButtonPressed) {
-            red_button.setBackgroundColor(redColor);
+            red_button.setBackgroundColor(getColor(R.color.red));
             redButtonPressed = true;
         }
         Toast.makeText(
@@ -43,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void greenButtonPress(View view) {
         Button green_button = findViewById(R.id.green_button);
         if (!greenButtonPressed) {
-            green_button.setBackgroundColor(greenColor);
+            green_button.setBackgroundColor(getColor(R.color.green));
             greenButtonPressed = true;
         }
         Toast.makeText(
@@ -56,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     public void blueButtonPress(View view) {
         Button blue_button = findViewById(R.id.blue_button);
         if (!blueButtonPressed) {
-            blue_button.setBackgroundColor(blueColor);
+            blue_button.setBackgroundColor(getColor(R.color.blue));
             blueButtonPressed = true;
         }
         Toast.makeText(
