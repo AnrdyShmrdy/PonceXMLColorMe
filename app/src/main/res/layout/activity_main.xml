@@ -8,10 +8,12 @@
 
     <Button
         android:id="@+id/red_button"
+        android:onClick="redButtonPress"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:text="@string/red"
-        android:backgroundTint="@color/red"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,11 +21,13 @@
 
     <Button
         android:id="@+id/green_button"
+        android:onClick="greenButtonPress"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:layout_marginTop="240dp"
+        android:textColor="@color/black"
         android:text="@string/green"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,11 +35,13 @@
 
     <Button
         android:id="@+id/blue_button"
+        android:onClick="blueButtonPress"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:layout_marginTop="480dp"
+        android:textColor="@color/black"
         android:text="@string/blue"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
