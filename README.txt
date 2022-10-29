@@ -6,6 +6,6 @@ I didn't use many resources for this project as I had previous experience with A
 All that was really necessary was for me to refresh myself on a few things like resource files, colors, and buttons
 I did look back on one of my previous Android Studio projects (the AboutMe project) for reference on how to do certain things
 I was already pretty familiar with the UI builder in Android Studio so I simply modified the empty activity template to do this project
-I'm fairly comfortable with using the constraint layout so I used that to arrange the buttons in the XML layout file
+I'm fairly comfortable with using the Android UI builder with the constraint layout so I used that to arrange the buttons
 I manually edited the XML file when I needed to change the text inside buttons or the color of buttons, since it was easier to do there
 I didn't really hit any roadblocks and as far as I know I don't have any unresolved bugs in my code
